@@ -1,0 +1,68 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+<div style="text-align: center">
+
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <form>
+                <fieldset>
+                    <legend class="text-center">Voer gegevens in om medeweker te toevoegen <span class="req"></span></legend>
+
+                                <div class="form-group">
+                                    <label for="Name">Voornaam: </label>
+                                    <input required type="text" [(ngModel)]="medewerker.voornaam" name="name" id="name"
+                                        class="form-control phone" maxlength="28" placeholder="Voer voornaam in..." />
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="Name">Achternaam: </label>
+                                    <input required type="text" [(ngModel)]="medewerker.achternaam" name="name" id="name"
+                                        class="form-control phone" maxlength="28" placeholder="Voer achternaam in..." />
+                                </div>
+            
+                                <div class="form-group">
+                                    <label for="Name">Geboortedatum: </label>
+                                    <input required type="text" [(ngModel)]="medewerker.geboorteDatum" name="name" id="name"
+                                        class="form-control phone" maxlength="28" placeholder="Voer geboortedatum in..." />
+                                </div>
+            
+                                <div class="form-group">
+                                    <label for="Name">Adres: </label>
+                                    <input required type="text" [(ngModel)]="medewerker.adres" name="name" id="name"
+                                        class="form-control phone" maxlength="28" placeholder="Voer adres in..." />
+                                </div>
+            
+                                <div class="form-group">
+                                    <label for="Name">Email: </label>
+                                    <input required type="text" [(ngModel)]="medewerker.email" name="name" id="name"
+                                        class="form-control phone" maxlength="28" placeholder="Voer email adres in..." />
+                                </div>
+            
+                                <div class="form-group">
+                                    <label for="Name">Telefoonnummer: </label>
+                                    <input required type="text" [(ngModel)]="medewerker.telefoonNummer" name="name" id="name"
+                                        class="form-control phone" maxlength="28" placeholder="Voer telefoonnummer in..." />
+                                </div>
+            
+                            
+            
+                               
+            
+                    <div class="form-group">
+                        <input class="btn btn-success" type="submit" name="submit_reg" value="Aanmaken" (click)="registerMedewerker()">
+                    </div>
+                </fieldset>
+            </form>
+            
+        </div>
+
+    </div>
+</div>
+
+
+

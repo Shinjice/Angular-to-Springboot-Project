@@ -1,0 +1,44 @@
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+
+
+
+
+<div class="container">
+    <div class="row col-md-6 col-md-offset-2 custyle">
+    <table class="table table-striped custab">
+    <thead>
+        <tr>
+            
+            <th>Id</th>
+            <th>Voornaam</th>
+            <th>Achternaam</th>
+            <th>GeboorteDatum</th>
+            <th>Adres</th>
+            <th>Email</th>
+            <th>Telefoonnummer</th>
+
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let medewerker of medewerkers">
+            
+            <td>{{medewerker.id}}</td>
+            <td>{{medewerker.voornaam}}</td>
+            <td>{{medewerker.achternaam}}</td>
+            <td>{{medewerker.geboorteDatum}}</td>
+            <td>{{medewerker.adres}}</td>
+            <td>{{medewerker.email}}</td>
+            <td>{{medewerker.telefoonNummer}}</td>
+         
+            <td class="text-center"><button class="btn btn-danger btn-xs" (click)="deleteUser(medewerker.id)"><span class="glyphicon glyphicon-remove"></span>Verwijder</button></td>
+          </tr>
+    </tbody>
+    </table>
+    </div>
+</div>
+
+
+
